@@ -142,8 +142,8 @@ public:
             }
         }
         linTotal = linBlancas + linComent + linCodigo;
+        archivo.close(nombreArchivo);
     }
-<<<<<<< HEAD
 
     void printData()
     {
@@ -167,7 +167,3 @@ int main()
     file.printData();
     return 0;
 }
-=======
-};
-//Hola como estas
->>>>>>> fac0b90f9959628599327b039422762f4a83c752
