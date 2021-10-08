@@ -13,21 +13,23 @@ private:
     double functionResult;
 
 public:
-
     //.i
-    FunctionT(double grados){
+    FunctionT(double grados)
+    {
         dof = grados;
         calculoParcialFun();
     }
 
     //.i
-    void setX(double equis){
+    void setX(double equis)
+    {
         x = equis;
         calcularFun();
     }
 
     //.i
-    double getResul(){
+    double getResul()
+    {
         return functionResult;
     }
 
@@ -59,7 +61,8 @@ public:
     double gammaNoInt(double num)
     {
         double result = 1;
-        for(double i = num - 1; i >= 0.5; i--){
+        for (double i = num - 1; i >= 0.5; i--)
+        {
             result *= i;
         }
         result *= sqrt(M_PI);
@@ -67,12 +70,14 @@ public:
     };
 
     //.i
-    void calculoParcialFun(){
+    void calculoParcialFun()
+    {
         funParcial = gamma((dof + 1.0) / 2.0) / (sqrt(dof * M_PI) * gamma(dof / 2));
     };
 
     //.i
-    void calcularFun(){
-        functionResult = funParcial * pow((1 + pow(x, 2) / dof), ((- dof - 1) / 2));
+    void calcularFun()
+    {
+        functionResult = funParcial * pow((1 + pow(x, 2) / dof), ((-dof - 1) / 2));
     };
 };

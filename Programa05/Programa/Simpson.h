@@ -10,7 +10,7 @@ private:
     double x, dof, w;
     int n;
     double pI, pF;
-    double errMax = 0.0001;
+    double errMax = 0.0000001; //.m
 
 public:
     //.i
@@ -18,6 +18,19 @@ public:
     {
         x = equis;
         dof = grados;
+        n = 10;
+        obtenerPf();
+    }
+
+    double getP()
+    {
+        return pF;
+    }
+
+    //.i
+    void setX(double equis)
+    {
+        x = equis;
         n = 10;
         obtenerPf();
     }
