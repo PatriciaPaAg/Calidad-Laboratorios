@@ -142,7 +142,7 @@ public:
             }
         }
         linTotal = linBlancas + linComent + linCodigo;
-        archivo.close(nombreArchivo);
+        archivo.close();
     }
 
     void printData()
