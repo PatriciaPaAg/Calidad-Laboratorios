@@ -5,6 +5,6 @@ CLASES BASE:
 CLASES NUEVAS:
 --------------------------------------------
 CLASES REUSADAS:
- NNNN: T=39, I=8, B=39
+ FunctionT: T=39, I=8, B=39
 --------------------------------------------
 Total de LDC=152
