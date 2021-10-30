@@ -1,3 +1,7 @@
+// Descripcion: Obtiene los datos de un archivo haciendo uso de la clase LeerArchivo y 
+// Autora: Patricia Palula Aguilar      Matricula: A01732537
+// Fecha de la ultima modificacion: 29 de octubre de 2021
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -19,6 +23,7 @@ private:
 
 public:
     //.i
+    // Asigna los valores correspondientes a los aatributos y llama a la función calculos
     Regression(string na)
     {
         name = na;
@@ -31,6 +36,7 @@ public:
     }
 
     //.i
+    // Calcula todas las sumatorias para que luego el proceso sea más sencillo
     void calcularSumatorias()
     {
         for (int i = 0; i < vtrX.size(); i++)
@@ -46,6 +52,7 @@ public:
     }
 
     //.i
+    // Realiza los calculos pertinentes para el programa
     void calculos()
     {
         calcularSumatorias();
@@ -57,6 +64,7 @@ public:
     }
 
     //.i
+    // Imprime los resultados
     void imprimirResul()
     {
         cout << fixed;
