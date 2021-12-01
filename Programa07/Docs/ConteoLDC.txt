@@ -1,0 +1,11 @@
+CLASES BASE:
+ LeerArchivo: T=60, I=2, B=48, D=8, M=3, A=20
+ Regression: T=61, I=4, B=53, D=10, M=5, A=18
+--------------------------------------------
+CLASES NUEVAS:
+ GaussJordan: T=47, I=3
+ main: T=24, I=2
+--------------------------------------------
+CLASES REUSADAS:
+--------------------------------------------
+Total de LDC=134
